@@ -41,15 +41,15 @@ setInterval(spriteClock, 150);
 setInterval(spriteClock2, 100);
 setInterval(colliClock, 5);
 function preload() {
-    house1 = loadImage("images/house1.png");
-    worldmap = loadImage("images/map.png")
-    img = loadImage("images/spritesheet.png");
-    music[1] = loadSound("music/music1.mp3");
-    music[2] = loadSound("music/music2.mp3");
-    music[3] = loadSound("music/music3.mp3");
-    music[4] = loadSound("music/music4.mp3");
-    heart[1] = loadImage("images/heart1.png");
-    heart[2] = loadImage("images/heart2.png");
+    house1 = loadImage("house1.png");
+    worldmap = loadImage("map.png")
+    img = loadImage("spritesheet.png");
+    music[1] = loadSound("music1.mp3");
+    music[2] = loadSound("music2.mp3");
+    music[3] = loadSound("music3.mp3");
+    music[4] = loadSound("music4.mp3");
+    heart[1] = loadImage("heart1.png");
+    heart[2] = loadImage("heart2.png");
 
 }
 
@@ -78,7 +78,7 @@ function setup() {
 }
 
 function draw() {
-    image(, 0, 0 + scroller, 2000, 2000, rmmap1, rmmap2, 2000, 2000);
+    image(worldmap, 0, 0 + scroller, 2000, 2000, rmmap1, rmmap2, 2000, 2000);
     Scroll(); 
     Move();
     Houses();
